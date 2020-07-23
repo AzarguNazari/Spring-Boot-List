@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-gateway-edge-config
+  namespace: gateway-example
+data:
+  application-deployed.yml: |+
+    logging:
+      request:
+        verbose: true
+
+    spring:
+      cloud:
+        gateway:
+          routes:
+            - id: book-id
+              uri: http://spring-gateway-book-service:8080
+              predicates:
+                - Path=/books/**
+              filters:
+                - PrefixPath=/public
+                - AddRequestHeader=X-Request-Foo, Bar
+                - AddRequestTimeHeaderPreFilter
+                - AddResponseHeader=X-Response-Bye, Bye
+                - AddResponseTimeHeaderPostFilter
+
+    server:
+      port: 8080
+
+  env: |+
+    JAVA_OPTS=" \
+            -Dcom.sun.management.jmxremote=true \
+            -Dcom.sun.management.jmxremote.local.only=true \
+            -Dcom.sun.management.jmxremote.port=8888 \
+            -Dcom.sun.management.jmxremote.rmi.port=8888 \
+            -Dcom.sun.management.jmxremote.ssl=false \
+            -Dcom.sun.management.jmxremote.authenticate=false"
