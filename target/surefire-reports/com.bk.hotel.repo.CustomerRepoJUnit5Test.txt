@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: com.bk.hotel.repo.CustomerRepoJUnit5Test
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.699 s <<< FAILURE! - in com.bk.hotel.repo.CustomerRepoJUnit5Test
+testFindCustomersByFNameAndLName{TestInfo}  Time elapsed: 0.107 s  <<< ERROR!
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.bk.hotel.repo.CustomerRepoJUnit5Test.testFindCustomersByFNameAndLName(CustomerRepoJUnit5Test.java:61)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.bk.hotel.repo.CustomerRepoJUnit5Test.testFindCustomersByFNameAndLName(CustomerRepoJUnit5Test.java:61)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+NULL not allowed for column "ID"; SQL statement:
+insert into customers (id, first_name, last_name, middle_name, suffix) values (null, ?, ?, ?, ?) [23502-197]
+	at com.bk.hotel.repo.CustomerRepoJUnit5Test.testFindCustomersByFNameAndLName(CustomerRepoJUnit5Test.java:61)
+
+testFindAllCustomers{CustomerRepo}  Time elapsed: 0.041 s  <<< ERROR!
+javax.persistence.PersistenceException: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.bk.hotel.repo.CustomerRepoJUnit5Test.testFindAllCustomers(CustomerRepoJUnit5Test.java:50)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement
+	at com.bk.hotel.repo.CustomerRepoJUnit5Test.testFindAllCustomers(CustomerRepoJUnit5Test.java:50)
+Caused by: org.h2.jdbc.JdbcSQLException: 
+NULL not allowed for column "ID"; SQL statement:
+insert into customers (id, first_name, last_name, middle_name, suffix) values (null, ?, ?, ?, ?) [23502-197]
+	at com.bk.hotel.repo.CustomerRepoJUnit5Test.testFindAllCustomers(CustomerRepoJUnit5Test.java:50)
+

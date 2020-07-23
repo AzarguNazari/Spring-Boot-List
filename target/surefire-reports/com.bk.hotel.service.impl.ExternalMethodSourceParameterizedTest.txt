@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.bk.hotel.service.impl.ExternalMethodSourceParameterizedTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in com.bk.hotel.service.impl.ExternalMethodSourceParameterizedTest
+verifyDateValidation{DateValidationBean}[1]  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <[]>
+but the following elements were unexpected:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ExternalMethodSourceParameterizedTest.verifyDateValidation(ExternalMethodSourceParameterizedTest.java:18)
+
+verifyDateValidation{DateValidationBean}[4]  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY"]>
+but the following elements were unexpected:
+  <["check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ExternalMethodSourceParameterizedTest.verifyDateValidation(ExternalMethodSourceParameterizedTest.java:18)
+

@@ -1,0 +1,112 @@
+-------------------------------------------------------------------------------
+Test set: com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.119 s <<< FAILURE! - in com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest
+verifyDateValidationUsingArgumentAccessor{ArgumentsAccessor}[1]  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <[]>
+but the following elements were unexpected:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingArgumentAccessor(ArgumentsAccessorParamterizedTest.java:36)
+
+verifyDateValidationUsingArgumentAccessor{ArgumentsAccessor}[4]  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY"]>
+but the following elements were unexpected:
+  <["check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingArgumentAccessor(ArgumentsAccessorParamterizedTest.java:36)
+
+verifyDateValidationUsingCsvFile{DateValidationBean}[1]  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <[]>
+but the following elements were unexpected:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingCsvFile(ArgumentsAccessorParamterizedTest.java:71)
+
+verifyDateValidationUsingCsvFile{DateValidationBean}[3]  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY"]>
+but the following elements were unexpected:
+  <["check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingCsvFile(ArgumentsAccessorParamterizedTest.java:71)
+
+verifyDateValidationUsingConverter{DateValidationBean}[1]  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <[]>
+but the following elements were unexpected:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingConverter(ArgumentsAccessorParamterizedTest.java:50)
+
+verifyDateValidationUsingConverter{DateValidationBean}[4]  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY"]>
+but the following elements were unexpected:
+  <["check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingConverter(ArgumentsAccessorParamterizedTest.java:50)
+
+verifyDateValidationUsingAnnotation{DateValidationBean}[1]  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <[]>
+but the following elements were unexpected:
+  <["check-in: 03/03/2020 is in the past.",
+    "check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingAnnotation(ArgumentsAccessorParamterizedTest.java:62)
+
+verifyDateValidationUsingAnnotation{DateValidationBean}[4]  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY",
+    "check-out: 03/07/2020 is in the past."]>
+to contain exactly in any order:
+  <["check-in date of: 02/30/2020 is not a valid date or does not match date format of: MM/DD/YYYY"]>
+but the following elements were unexpected:
+  <["check-out: 03/07/2020 is in the past."]>
+
+	at com.bk.hotel.service.impl.ArgumentsAccessorParamterizedTest.verifyDateValidationUsingAnnotation(ArgumentsAccessorParamterizedTest.java:62)
+

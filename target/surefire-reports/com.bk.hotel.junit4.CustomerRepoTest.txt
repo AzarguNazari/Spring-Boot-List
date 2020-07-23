@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.bk.hotel.junit4.CustomerRepoTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in com.bk.hotel.junit4.CustomerRepoTest
+initializationError  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Configuration error: found multiple declarations of @BootstrapWith for test class [com.bk.hotel.junit4.CustomerRepoTest]: [@org.springframework.test.context.BootstrapWith(value=class org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTestContextBootstrapper), @org.springframework.test.context.BootstrapWith(value=class org.springframework.boot.test.context.SpringBootTestContextBootstrapper)]
+
