@@ -1,4 +1,6 @@
 # Spring Arhcitecture
+![](https://spring.io/images/diagram-microservices-88e01c7d34c688cb49556435c130d352.svg)
+
 FailureAnalyzer -> for more information if application fails if FailureAnalyzer doesnt not exist, enable debug logging for 
 org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener= true
 
